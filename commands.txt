@@ -1,0 +1,130 @@
+# Display the current hostname of the system
+hostname
+
+# Display the current date and time
+date
+
+# Show the current logged-in user
+whoami
+
+# View the manual page for the 'date' command (shows details on how to use the date command)
+man date
+
+# List the files and directories in the current directory
+ls
+
+# List files in the current directory with detailed information (permissions, owner, size, etc.)
+ls -l
+
+# View the manual page for the 'ls' command (shows details on how to use the ls command)
+man ls
+
+# Print the current working directory (shows the full path to the current directory)
+pwd
+
+# Create a new directory called 'file1'
+mkdir file1
+
+# Navigate into the newly created directory 'file1'
+cd file1/
+
+# Print the current working directory (should be '/home/yourusername/file1' or similar)
+pwd
+
+# Create a new file called 'newFile' and start typing content into it
+# You can type content and press Ctrl+C to exit the editor mode (Ctrl+C stops the cat command, but Ctrl+D is preferred to save and quit)
+cat > newFile
+# Type: hello, this is the content inside the newFile
+# Press Ctrl+C to stop (however, use Ctrl+D to save and exit properly)
+ 
+# View the content of 'newFile' to confirm it was saved correctly
+cat newFile
+
+# Create an empty file called 'a' (using 'touch' to create an empty file)
+touch a
+
+# List files in the current directory with detailed information (check 'a' file's details)
+ls -l
+
+# Add execute permission for the file owner (user) using chmod
+chmod u+x a
+
+# Remove write permission for the group on the file 'a'
+chmod g-w a
+
+# List files in the current directory again to check updated permissions for 'a'
+ls -l
+
+# **Question: Difference between Absolute and Relative Path**
+# Explanation:
+# Absolute Path:
+# - An absolute path is a complete path from the root directory `/` to the target file or directory.
+# - It always starts from the root directory `/` and includes the entire directory structure.
+# Example:
+# `/home/yourusername/file1/newFile`
+
+# Relative Path:
+# - A relative path describes the location of a file or directory relative to the current working directory.
+# - It doesn't start from the root directory.
+# Example:
+# If you're in `/home/yourusername/`, you can use `file1/newFile` as a relative path.
+
+# Absolute paths are used when you want to refer to a specific location, no matter your current directory.
+# Relative paths are used when you want to refer to a location based on your current directory.
+
+# Assign the value '5' to the variable x (note: no spaces around '=' when assigning a value to a variable)
+x=5
+
+# Print the variable name 'x' (This will print the literal string 'x', not the value)
+echo x
+
+# Print the value stored in the variable 'x' (This will print '5')
+echo $x
+
+# List files in the current directory sorted by modification time (newest last)
+ls -lrt
+
+# Rename 'newFile' to 'NewName'
+mv newFile NewName
+
+# List files in the current directory again to confirm the rename
+ls -lrt
+
+# Print the current working directory again
+pwd
+
+# Move 'NewName' to the 'home' directory (make sure to use an absolute path for '/home/')
+mv NewName /home/
+
+# Change to the '/home' directory
+cd /home/
+
+# List files in the '/home' directory to confirm the file 'NewName' was moved there
+ls
+
+# Remove the file 'NewName'
+rm NewName
+
+# Go back to the 'file1' directory
+cd file1/
+
+# Remove the file 'a'
+rm a
+
+# Go up one level from 'file1' to '/home/yourusername'
+cd ..
+
+# Remove the empty directory 'file1' (only works if the directory is empty)
+rmdir file1
+
+# List the contents again to confirm 'file1' was removed
+ls
+
+# Go up one more level (back to your home directory)
+cd ..
+
+# List files with detailed information again
+ls -l
+
+# Print the current working directory again (should be '/home/yourusername' or similar)
+pwd
