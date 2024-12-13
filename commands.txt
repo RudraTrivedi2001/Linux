@@ -43,7 +43,7 @@ cat newFile
 # Create an empty file called 'a' (using 'touch' to create an empty file)
 touch a
 
-# List files in the current directory with detailed information (check 'a' file's details)
+# List files in the current directory with detailed information (check 'a' file's details.)
 ls -l
 
 # Add execute permission for the file owner (user) using chmod
